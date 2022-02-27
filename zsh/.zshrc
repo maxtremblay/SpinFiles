@@ -11,16 +11,16 @@ setopt interactive_comments
 stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
+## case-insensitive (all) completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # beeping is annoying
 unsetopt BEEP
-
 
 # completions
 autoload -Uz compinit
 zstyle ':completion:*' menu select
-# zstyle ':completion::complete:lsof:*' menu yes select
 zmodload zsh/complist
-# compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 autoload -U up-line-or-beginning-search
