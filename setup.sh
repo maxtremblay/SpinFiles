@@ -17,7 +17,6 @@ sudo dnf install -y \
     alacritty \
     exa \
     fzf \ lazygit \
-    neovim \
     neovim python3-neovim \
     ripgrep \
     zsh 
