@@ -1,5 +1,6 @@
-require "spin.options"
-require "spin.keymaps"
-require "spin.plugins"
-require "spin.colorscheme"
-require "spin.cmp"
+require 'spin.options'
+require 'spin.keymaps'
+require 'spin.plugins'
+require 'spin.colorscheme'
+require 'spin.cmp'
+require 'spin.lsp'
