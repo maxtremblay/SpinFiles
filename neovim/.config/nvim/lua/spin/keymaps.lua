@@ -70,3 +70,7 @@ keymap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
 keymap("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 
+keymap("n", "<leader>gn", "<cmd>Gitsigns next_hunk<cr>", opts)
+keymap("n", "<leader>gp", "<cmd>Gitsigns prev_hunk<cr>", opts)
+keymap("n", "<leader>gv", "<cmd>Gitsigns preview_hunk<cr>", opts)
+keymap("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<cr>", opts)
