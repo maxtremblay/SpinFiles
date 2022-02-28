@@ -1,5 +1,5 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true } -- Shorten function name
+local term_opts = { silent = true } -- Shorten function name 
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
@@ -74,3 +74,6 @@ keymap("n", "<leader>gn", "<cmd>Gitsigns next_hunk<cr>", opts)
 keymap("n", "<leader>gp", "<cmd>Gitsigns prev_hunk<cr>", opts)
 keymap("n", "<leader>gv", "<cmd>Gitsigns preview_hunk<cr>", opts)
 keymap("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<cr>", opts)
+
+-- Toggle light and dark mode --
+keymap("n", "<leader>cs", "<cmd>lua require('spin.colorscheme').toggle_light_dark()<cr>", opts)

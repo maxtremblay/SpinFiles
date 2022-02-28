@@ -45,7 +45,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- Colorscheme
-  use "navarasu/onedark.nvim"
+  use "tjdevries/colorbuddy.vim"
+  use "Th3Whit3Wolf/onebuddy"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -73,8 +74,6 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate"
   }
-  use "p00f/nvim-ts-rainbow"
-  use "nvim-treesitter/playground"
 
   use "b3nj5m1n/kommentary"
 

@@ -1,12 +1,25 @@
-local ok, theme = pcall(require, "onedark")
-if ok then
-    theme.setup {
-        style = "dark",
-        toggle_style_key = "<leader>cs",
-        toggle_style_list = {'dark', 'light'},
-    }
-    theme.load()
-else
-  vim.notify("error loading colorscheme")
+local ok, buddy = pcall(require, "colorbuddy")
+
+if not ok then
+    return
 end
 
+buddy.colorscheme("onebuddy")
+buddy.colorscheme("onebuddy", "light")
+print(buddy.styles)
+
+local M = {}
+
+M.background = "dark"
+
+M.toggle_light_dark = function ()
+    if M.background == "dark" then
+        M.background = "light"
+    else
+        M.background = "dark"
+    end
+    print(M.background)
+    buddy.colorscheme(M.background)
+end
+
+return M
