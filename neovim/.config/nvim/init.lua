@@ -1,6 +1,11 @@
-require 'spin.options'
-require 'spin.keymaps'
-require 'spin.plugins'
-require 'spin.colorscheme'
-require 'spin.cmp'
-require 'spin.lsp'
+require "spin.options"
+require "spin.keymaps"
+require "spin.plugins"
+require "spin.colorscheme"
+require "spin.cmp"
+require "spin.lsp"
+require "spin.telescope"
+require "spin.treesitter"
+require "spin.autopairs"
+require "spin.kommentary"
+require "spin.nvimtree"
