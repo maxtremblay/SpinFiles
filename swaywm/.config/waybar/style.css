@@ -1,0 +1,79 @@
+/* COLORS */
+
+/* Nord */
+@define-color dark #282c34;
+@define-color light #abb2bf;
+@define-color grey #828997;
+@define-color blue #61afef;
+@define-color yellow #e5c07b;
+@define-color red #e06c75;
+
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+    margin: 0.15em 0.3em 0.0em 0.3em;
+}
+
+/* The whole bar */
+#waybar {
+    background: transparent;
+    color: @light;
+    font-family: "MesloLGS NF", "Font Awesome 5 Pro";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Each module */
+#battery,
+#clock,
+#mode,
+#network,
+#pulseaudio,
+#bluetooth,
+#tray {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    background: transparent;
+    color: @dark;
+}
+
+
+/* Each critical module */
+#battery.critical {
+    color: @red;
+}
+
+/* Each warning */
+#network.disconnected,
+#battery.warning {
+    background: @dark;
+    color: @yellow;
+}
+
+/* Workspaces stuff */
+
+#workspaces button {
+    font-weight: bold; 
+    color: @dark;
+    padding: 0 0.4em;
+}
+
+#workspaces button.focused {
+    color: @light;
+    background: @dark;
+}
+
+#workspaces button.urgent {
+    color: @warning;
+    background: @dark;
+}
+
+#mode { /* Shown current Sway mode (resize etc.) */
+    color: @red;
+    background: transparent;
+    font-weight: bold;
+}
+

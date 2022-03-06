@@ -16,10 +16,16 @@ sudo dnf copr enable atim/lazygit -y
 sudo dnf install -y \
     alacritty \
     exa \
-    fzf \ lazygit \
+    fzf \
+    lazygit \
     neovim python3-neovim \
     ripgrep \
-    zsh 
+    stow \
+    sway waybar wofi \
+    zsh util-linux-user
+
+# Change shell
+chsh -s /usr/bin/zsh
 
 # powerlevel10k manual install
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/powerlevel10k
